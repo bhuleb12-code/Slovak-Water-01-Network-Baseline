@@ -131,42 +131,6 @@ Key analytical outputs include:
 
 ---
 
-## Repository Structure
-
-```text
-Slovak-Water-Phase-1-SCADA-Fault-Risk-Analysis/
-│
-├── data/
-│   ├── raw/
-│   ├── reference/
-│   └── processed/
-│
-├── reports/
-│   ├── 09_baseline_relative_fault_association.py
-│   └── project_1_baseline_summary.txt
-│
-├── scripts/
-│   ├── 09_baseline_relative_fault_association.py
-│   ├── 10_deviation_episode_persistence.py
-│   ├── 11_deviation_lead_time_analysis.py
-│   ├── 12_multisignal_deviation_analysis.py
-│   ├── 13_multisignal_persistence_analysis.py
-│   ├── 14_combined_deviation_risk_score.py
-│   └── 15_baseline_results_evidence_summary.py
-│
-└── src/
-    ├── 01_prepare_dataset.py
-    ├── 02_network_baseline.py
-    ├── 03_signal_comparison.py
-    ├── 04_temporal_baseline.py
-    ├── 05_baseline_model.py
-    ├── 06_temporal_naive_baseline.py
-    ├── 07_target_persistence_analysis.py
-    └── 08_target_construction_analysis.py
-```
-
----
-
 ## Tools and Technologies
 
 * **Python**
