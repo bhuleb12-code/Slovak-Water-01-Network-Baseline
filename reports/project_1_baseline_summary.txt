@@ -1,0 +1,110 @@
+PROJECT 1 — SLOVAK WATER SCADA
+BASELINE RESULTS & EVIDENCE SUMMARY
+==========================================================================================
+
+PURPOSE
+This report consolidates the analytical evidence generated during the baseline investigation.
+No new predictive model was fitted in Step 15.
+
+DATASET
+Observations: 8,737
+Start: 2021-12-31 23:00:00
+End: 2022-12-30 23:00:00
+Baseline fault rate: 73.62%
+
+KEY BASELINE FINDINGS
+------------------------------------------------------------------------------------------
+
+[ESTABLISHED]
+Category: Baseline prevalence
+Finding: Overall 7-day fault rate
+Result: 73.62%
+Interpretation: This is the reference prevalence against which predictive and risk-based results must be evaluated.
+
+[ESTABLISHED]
+Category: Predictive baseline
+Finding: Baseline model results
+Result: 3 result records
+Interpretation: The baseline predictive model provides the initial benchmark for subsequent modelling.
+
+[ESTABLISHED]
+Category: Temporal baseline
+Finding: Temporal-naive benchmark
+Result: 9 result records
+Interpretation: The temporal-naive benchmark establishes how much predictive information can be obtained from temporal persistence alone.
+
+[ESTABLISHED]
+Category: Target behaviour
+Finding: Fault-label persistence
+Result: 11 result records
+Interpretation: The target exhibits temporal persistence, meaning predictive performance must be interpreted against a strong temporal baseline.
+
+[ESTABLISHED]
+Category: Signal association
+Finding: Strongest baseline-relative signal
+Result: gw_temp_site2_anomaly_score — lift 1.38
+Interpretation: Several signals show elevated fault association when deviating from their baseline.
+
+[ESTABLISHED]
+Category: Temporal signal behaviour
+Finding: Deviation episode persistence
+Result: 1,167 deviation episodes
+Interpretation: Abnormal signal conditions persist for variable durations, including multi-hour and multi-day episodes.
+
+[ESTABLISHED — ASSOCIATIONAL]
+Category: Temporal predictive evidence
+Finding: Fault following deviation
+Result: 24h: 89.12%; 48h: 91.00%; 72h: 91.26%; 7d: 94.26%
+Interpretation: Deviation episodes are frequently followed by a positive fault label within the analysed horizons.
+
+[ESTABLISHED — ASSOCIATIONAL]
+Category: Multi-signal behaviour
+Finding: Simultaneous signal deviations
+Result: Hours with >=2 deviations: 1,332; fault rate: 89.11%
+Interpretation: Concurrent abnormal conditions are associated with higher fault prevalence than the overall baseline.
+
+[ESTABLISHED — ASSOCIATIONAL]
+Category: Combined risk
+Finding: Deviation-count risk gradient
+Result: Maximum observed lift: 1.36; fault rate: 100.00%
+Interpretation: Fault prevalence increases as the number of simultaneous deviations increases.
+
+[IMPORTANT]
+Category: Limitation
+Finding: High baseline fault prevalence
+Result: 73.62% positive rate
+Interpretation: Raw fault percentages must not be interpreted without comparison with the high baseline prevalence.
+
+[IMPORTANT]
+Category: Limitation
+Finding: Association versus causation
+Result: Signal deviation is associated with fault labels
+Interpretation: The analysis does not establish that any signal causes the fault condition.
+
+[IMPORTANT]
+Category: Limitation
+Finding: Target temporal persistence
+Result: fault_d7 is temporally persistent
+Interpretation: Apparent predictive performance may partly reflect the temporal structure of the target.
+
+[NOT ESTABLISHED]
+Category: Limitation
+Finding: Out-of-sample generalisation
+Result: Not established by this baseline
+Interpretation: The baseline identifies promising predictors but does not establish their performance on genuinely unseen future data.
+
+[BASELINE COMPLETE]
+Category: Final conclusion
+Finding: Project 1 baseline finding
+Result: Predictive candidates identified
+Interpretation: The baseline investigation establishes meaningful relationships between abnormal signal behaviour, temporal persistence, simultaneous deviations and the fault_d7 target. Several signals and multi-signal patterns warrant further predictive investigation.
+
+==========================================================================================
+PROJECT 1 BASELINE CONCLUSION
+==========================================================================================
+
+The baseline investigation established that the Slovak Water SCADA dataset contains substantial temporal persistence and meaningful associations between abnormal signal behaviour and the fault_d7 target. Individual signal deviations, persistent deviation episodes and simultaneous deviations are all associated with elevated fault prevalence.
+
+The analysis therefore identified several promising signals and multi-signal patterns for predictive monitoring. However, these results should be treated as baseline evidence rather than proof of causal or out-of-sample predictive performance.
+
+PROJECT 1 STATUS: BASELINE COMPLETE

@@ -1,0 +1,12 @@
+metric,value
+total_observations,8737.0
+target_changes,68.0
+change_rate,0.007783882783882784
+persistence_rate,0.9922161172161172
+total_episodes,69.0
+positive_episodes,34.0
+negative_episodes,35.0
+p_fault1_given_fault1,0.9947139303482587
+p_fault0_given_fault0,0.9852430555555556
+p_fault1_given_fault0,0.014756944444444444
+p_fault0_given_fault1,0.005286069651741294

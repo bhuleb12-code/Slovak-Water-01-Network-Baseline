@@ -1,0 +1,15 @@
+category,finding,result,interpretation,evidence_status
+Baseline prevalence,Overall 7-day fault rate,73.62%,This is the reference prevalence against which predictive and risk-based results must be evaluated.,ESTABLISHED
+Predictive baseline,Baseline model results,3 result records,The baseline predictive model provides the initial benchmark for subsequent modelling.,ESTABLISHED
+Temporal baseline,Temporal-naive benchmark,9 result records,The temporal-naive benchmark establishes how much predictive information can be obtained from temporal persistence alone.,ESTABLISHED
+Target behaviour,Fault-label persistence,11 result records,"The target exhibits temporal persistence, meaning predictive performance must be interpreted against a strong temporal baseline.",ESTABLISHED
+Signal association,Strongest baseline-relative signal,gw_temp_site2_anomaly_score — lift 1.38,Several signals show elevated fault association when deviating from their baseline.,ESTABLISHED
+Temporal signal behaviour,Deviation episode persistence,"1,167 deviation episodes","Abnormal signal conditions persist for variable durations, including multi-hour and multi-day episodes.",ESTABLISHED
+Temporal predictive evidence,Fault following deviation,24h: 89.12%; 48h: 91.00%; 72h: 91.26%; 7d: 94.26%,Deviation episodes are frequently followed by a positive fault label within the analysed horizons.,ESTABLISHED — ASSOCIATIONAL
+Multi-signal behaviour,Simultaneous signal deviations,"Hours with >=2 deviations: 1,332; fault rate: 89.11%",Concurrent abnormal conditions are associated with higher fault prevalence than the overall baseline.,ESTABLISHED — ASSOCIATIONAL
+Combined risk,Deviation-count risk gradient,Maximum observed lift: 1.36; fault rate: 100.00%,Fault prevalence increases as the number of simultaneous deviations increases.,ESTABLISHED — ASSOCIATIONAL
+Limitation,High baseline fault prevalence,73.62% positive rate,Raw fault percentages must not be interpreted without comparison with the high baseline prevalence.,IMPORTANT
+Limitation,Association versus causation,Signal deviation is associated with fault labels,The analysis does not establish that any signal causes the fault condition.,IMPORTANT
+Limitation,Target temporal persistence,fault_d7 is temporally persistent,Apparent predictive performance may partly reflect the temporal structure of the target.,IMPORTANT
+Limitation,Out-of-sample generalisation,Not established by this baseline,The baseline identifies promising predictors but does not establish their performance on genuinely unseen future data.,NOT ESTABLISHED
+Final conclusion,Project 1 baseline finding,Predictive candidates identified,"The baseline investigation establishes meaningful relationships between abnormal signal behaviour, temporal persistence, simultaneous deviations and the fault_d7 target. Several signals and multi-signal patterns warrant further predictive investigation.",BASELINE COMPLETE
